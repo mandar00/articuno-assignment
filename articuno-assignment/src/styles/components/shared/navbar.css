@@ -1,0 +1,35 @@
+.navbar-main-container {
+    width: 100vw;
+    height: 5.333vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    border-bottom: 1px solid #95a5a66f;
+    margin-bottom: 3vw;
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.e-shop-container {
+    margin-left: .5vw;
+}
+
+.navbar-gender-selection {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-icon-container {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 4vw;
+}

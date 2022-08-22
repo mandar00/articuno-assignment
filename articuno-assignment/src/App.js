@@ -1,10 +1,18 @@
 import React from "react";
-import "../styles/global.css"
+import "./styles/global.css";
+import { Route, Routes } from "react-router-dom";
+import HomeController from "./controllers/home-controller";
+import Navbar from "./components/shared/navbar";
 
 function App() {
   return (
-    <div className="App">
-
+    <div style={{ overflowX: "hidden" }}>
+      <div>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route exact={true} path="/" element={<HomeController />} />
+      </Routes>
     </div>
   );
 }

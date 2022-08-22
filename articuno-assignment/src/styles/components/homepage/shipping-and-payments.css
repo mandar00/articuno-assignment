@@ -1,0 +1,70 @@
+.shipping-and-payments-main-container {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    width: 42vw;
+    color: black;
+    text-align: left;
+    font-size: 1.333vw;
+    margin-bottom: 3vw;
+}
+
+.login-btn-container {
+    width: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2vw;
+}
+
+.round-green-btn {
+    width: 7.5vw;
+    height: 3vw;
+    border-radius: 2vw;
+    font-size: .8vw;
+    color: white;
+    border: 1px solid gray;
+}
+
+.shipping-info-container {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.shipping-info-title {
+    margin-bottom: 1.5vw;
+    width: 42vw;
+    color: black;
+    font-size: 1vw;
+}
+
+.shipping-info-inputs-container {
+    width: 42vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1vw;
+    padding: 0 1vw;
+}
+
+.shipping-input-feild {
+    width: 100%;
+    height: 3vw;
+    background-color: transparent;
+    border-radius: 1.5vw;
+    outline: none;
+    border: solid 1px gray;
+    padding-left: 1vw;
+}
+
+.shipping-input-feild::placeholder {
+    font-size: 1vw;
+}

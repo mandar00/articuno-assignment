@@ -1,0 +1,36 @@
+.payment-delivery-main-container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-method {
+    width: 20vw;
+    margin-bottom: 3vw;
+}
+
+.payment-method-title {
+    width: 20vw;
+    color: black;
+    text-align: left;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.payment-method-btn-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+}
+
+.delivery-method {
+    width: 20vw;
+}
+
+.delivery-method-btn-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1vw;
+}
