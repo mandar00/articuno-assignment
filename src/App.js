@@ -11,7 +11,7 @@ function App() {
         <Navbar />
       </div>
       <Routes>
-        <Route exact={true} path="/" element={<HomeController />} />
+        <Route exact={true} path="/articuno-assignment" element={<HomeController />} />
       </Routes>
     </div>
   );
