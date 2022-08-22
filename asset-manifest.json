@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/articuno-assignment/static/css/main.2e302c66.css",
+    "main.css": "/articuno-assignment/static/css/main.bb56f7de.css",
     "main.js": "/articuno-assignment/static/js/main.3e42d1b2.js",
     "static/media/black-tshirt.png": "/articuno-assignment/static/media/black-tshirt.d00c569cbbb0e8baf053.png",
     "index.html": "/articuno-assignment/index.html",
-    "main.2e302c66.css.map": "/articuno-assignment/static/css/main.2e302c66.css.map",
+    "main.bb56f7de.css.map": "/articuno-assignment/static/css/main.bb56f7de.css.map",
     "main.3e42d1b2.js.map": "/articuno-assignment/static/js/main.3e42d1b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e302c66.css",
+    "static/css/main.bb56f7de.css",
     "static/js/main.3e42d1b2.js"
   ]
 }
