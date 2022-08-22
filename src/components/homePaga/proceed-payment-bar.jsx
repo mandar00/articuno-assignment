@@ -19,7 +19,12 @@ const ProceedPaymentBar = (props) => {
           <div className="proceed-payment-btn">
             <Stack direction="row" spacing={2}>
               <Button
-                sx={{ width: "13vw", height: "3vw", borderRadius: "2vw" }}
+                sx={{ 
+                  width: "13vw", 
+                  height: "3vw", 
+                  borderRadius: "2vw" ,
+                  fontSize:".7vw"
+                }}
                 variant="outlined"
                 color="secondary"
               >
@@ -31,6 +36,7 @@ const ProceedPaymentBar = (props) => {
                   height: "3vw",
                   borderRadius: "2vw",
                   color: "white",
+                  fontSize:".7vw"
                 }}
                 variant="contained"
                 color="primary"
