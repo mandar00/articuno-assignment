@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HomeLayout from "../layout/home-layout";
 import { createTheme } from "@mui/material/styles";
 import paypalLogo from "../images/paypal.png";
@@ -13,6 +13,10 @@ import DHLLogo from "../images/dhl.png";
 import FedExLogo from "../images/fedx.png";
 import WhiteTshirt from "../images/white-tshirt.png";
 import BlackTshirt from "../images/black-tshirt.png";
+import { httpApirequest } from "../helpers/httpiApiRequest";
+import { useDispatch } from "react-redux";
+import { success } from "../state/shipping-reducers/actions";
+import { fail } from "../state/shipping-reducers/actions";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +29,8 @@ const theme = createTheme({
   },
 });
 const HomeController = () => {
+  const dispatch=useDispatch()
+  const [apiResponse,setApiResponse]=useState([])
   const inputs = [
     {
       type: "email",
@@ -117,6 +123,22 @@ const HomeController = () => {
       price: "69.99",
     },
   ];
+
+  const handleApiRequest =async()=>{
+    let response=await httpApirequest({
+      method:"GET",
+      url:"https://jsonplaceholder.typicode.com/posts"
+    })
+    if(response){
+      dispatch(success())
+      setApiResponse(response)
+    }
+    else{
+      dispatch(fail())
+      setApiResponse("Api failed")
+    }
+  }
+  
   return (
     <>
       <HomeLayout
@@ -125,6 +147,8 @@ const HomeController = () => {
         paymentMethod={paymentMethod}
         deliveryMethod={deliveryMethod}
         cartItems={cartItems}
+        handleApiRequest={handleApiRequest}
+        apiResponse={apiResponse}
       />
     </>
   );

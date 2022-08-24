@@ -5,3 +5,26 @@
     justify-content: space-between;
     padding: 0 5vw;
 }
+
+.axios-call-container{
+    margin-top: 3vw;
+}
+
+.api-response-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    overflow-x: auto;
+}
+
+.response-div{
+    margin: 0 1vw;
+}
+
+.redux-states{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

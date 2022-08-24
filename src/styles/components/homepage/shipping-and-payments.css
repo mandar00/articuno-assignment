@@ -68,3 +68,18 @@
 .shipping-input-feild::placeholder {
     font-size: 1vw;
 }
+
+.increment-decrement-div{
+    width: 12vw ;
+    height: 3vw;
+    background-color:antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+}
+
+.redux-state-holder{
+    width: 3vw;
+    height: 3vw;
+}
